@@ -1,39 +1,14 @@
 # Arquitetura_de_software
 
 * Visão Geral
-
-Essa aplicação em C# foi projetada para gerenciar uma livraria. Ele inclui o cadastro de usuários, bem como o registro de informações sobre os livros adquiridos por tais usuários.
-O cadastro de usuários é feito com o nome e email. A busca por um usuário específico pode ser feita com o id dele.
-O registro dos livros pode ser feito com o titulo, gênero, editora, preço, entrega a domicilio, telefone do cliente, e data da compra.
-A busca de dados específicos sobre os livros pode ser feita com editora, titulo, genero, preço, se é entrega a domicilio e o método de pagamento.
+    - Essa aplicação em C# foi projetada para gerenciar uma livraria. Ele inclui o cadastro de usuários, bem como o registro de informações sobre os livros adquiridos por tais usuários.
+    - O cadastro de usuários é feito com o nome e email. A busca por um usuário específico pode ser feita com o id dele.
+    - O registro dos livros pode ser feito com o titulo, gênero, editora, preço, entrega a domicilio, telefone do cliente, e data da compra.
+    - A busca de dados específicos sobre os livros pode ser feita com editora, titulo, genero, preço, se é entrega a domicilio e o método de pagamento.
 
 ## Instalação:
 
 Siga estas etapas para baixar, configurar e usar a aplicação:
-
-### Download e configuração do Mysql:
-
-Esse projeto foi feito com o banco de dados MySQL Server. O banco de dados usado é dbAPI.
-*Download:
-    - Baixe o MySQL Server. Isso pode ser feito no link https://dev.mysql.com/downloads/installer/
-    - Após baixar, siga as instruções de instalação.
-    - Após baixar e instalar, digite e execute o seguinte código, para criar o banco de dados e a tabela a serem utilizados:
-        create database dbAPI;
-        use  dbAPI;
-        create table User(
-        id char (36), Nome varchar(50),
-        Email varchar (60),
-        Editora varchar (100),
-        Genero varchar (50),
-        Titulo varchar (100),
-        EnderecoCliente varchar(100),
-        TelefoneCliente varchar(20),
-        PrecoLivro varchar(7),
-        MetodoPagamento varchar (30),
-        EntregaDomicilio varchar (10),
-        DataCompra datetime, 
-        createAt datetime,
-        updateAt datetime);
 
 ### Download from GitHub:
 
