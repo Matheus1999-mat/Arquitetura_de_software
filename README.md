@@ -9,9 +9,9 @@
 ## Banco de dados:
 
 * Foi usado o MySQL, como banco de dados.
-      - No MySQL, para criar o banco de dados, use o comando "create database dbAPI;", sem aspas.
-      - Após isso, para selecionar o banco de dados criado, use o comando "use  dbAPI;", sem aspas.
-      - Após isso, use esse comando para criar a tabela a ser utilizada:
+* No MySQL, para criar o banco de dados, use o comando "create database dbAPI;", sem aspas.
+* Após isso, para selecionar o banco de dados criado, use o comando "use  dbAPI;", sem aspas.
+* Após isso, use esse comando para criar a tabela a ser utilizada:
         create table User(
         id varchar (36), Nome varchar(50),
         Email varchar (60),
