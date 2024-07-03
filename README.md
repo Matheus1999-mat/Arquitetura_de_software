@@ -7,22 +7,25 @@
     - A busca de dados específicos sobre os livros pode ser feita com editora, titulo, genero, preço, se é entrega a domicilio e o método de pagamento.
 
 ## Banco de dados:
-create database dbAPI;
-use  dbAPI;
-create table User(
-id char (36), Nome varchar(50),
-Email varchar (60),
-Editora varchar (100),
-Genero varchar (50),
-Titulo varchar (100),
-EnderecoCliente varchar(100),
-TelefoneCliente varchar(20),
-PrecoLivro varchar(7),
-MetodoPagamento varchar (30),
-EntregaDomicilio varchar (10),
-DataCompra datetime, 
-createAt datetime,
-updateAt datetime);
+
+* Foi usado o MySQL, como banco de dados.
+      - No MySQL, para criar o banco de dados, use o comando "create database dbAPI;", sem aspas.
+      - Após isso, para selecionar o banco de dados criado, use o comando "use  dbAPI;", sem aspas.
+      - Após isso, use esse comando para criar a tabela a ser utilizada:
+        create table User(
+        id varchar (36), Nome varchar(50),
+        Email varchar (60),
+        Editora varchar (100),
+        Genero varchar (50),
+        Titulo varchar (100),
+        EnderecoCliente varchar(100),
+        TelefoneCliente varchar(20),
+        PrecoLivro varchar(7),
+        MetodoPagamento varchar (30),
+        EntregaDomicilio varchar (10),
+        DataCompra datetime, 
+        createAt datetime,
+        updateAt datetime);
 
 ## Instalação:
 
