@@ -6,6 +6,24 @@
     - O registro dos livros pode ser feito com o titulo, gênero, editora, preço, entrega a domicilio, telefone do cliente, e data da compra.
     - A busca de dados específicos sobre os livros pode ser feita com editora, titulo, genero, preço, se é entrega a domicilio e o método de pagamento.
 
+## Banco de dados:
+create database dbAPI;
+use  dbAPI;
+create table User(
+id char (36), Nome varchar(50),
+Email varchar (60),
+Editora varchar (100),
+Genero varchar (50),
+Titulo varchar (100),
+EnderecoCliente varchar(100),
+TelefoneCliente varchar(20),
+PrecoLivro varchar(7),
+MetodoPagamento varchar (30),
+EntregaDomicilio varchar (10),
+DataCompra datetime, 
+createAt datetime,
+updateAt datetime);
+
 ## Instalação:
 
 Siga estas etapas para baixar, configurar e usar a aplicação:
@@ -48,4 +66,4 @@ Siga estas etapas para baixar, configurar e usar a aplicação:
   - O cadastro de dados sobre os livros adquiridos é feito pelo método POST.
   - A busca de livros é feita pelo método POST. Isso ocorre em virtude da possibilidade de buscar dados específicos, sendo possível passar um argumento.
   - A atualização de livros é feita pelo método PUT.
-  - A remoção de livros é feita pelo método DELETE. A remoção é feita considerando o título do livro.
+  
